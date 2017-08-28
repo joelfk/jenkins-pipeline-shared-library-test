@@ -6,6 +6,7 @@ pipeline {
 	stages {
 		stage("Build") {
 			steps {
+				upsertStack()
 				upsertStack "Joel"
 			}
 		}
