@@ -6,8 +6,7 @@ pipeline {
 	stages {
 		stage("Build") {
 			steps {
-				upsertStack()
-				upsertStack "Joel"
+				upsertStack stackName: "Joel" parameters: ["P1Key":"P1Value", "P1Key":"P1Value"]
 			}
 		}
 	}
