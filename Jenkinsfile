@@ -17,7 +17,7 @@ pipeline {
 					stackName: "Joel",
 					parameters: [
 						"P1Key" : "P1Value",
-						"P2Key" : $PARAM_VALUE
+						"P2Key" : ${env.PARAM_VALUE}
 					])
 				echo "After upsertStack"
 			}
