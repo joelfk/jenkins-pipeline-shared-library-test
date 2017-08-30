@@ -7,7 +7,7 @@ pipeline {
 		stage("Build") {
 			steps {
 				echo "Before upsertStack"
-				upsertStack name: "Joel"
+				upsertStack "Joel"
 				echo "After upsertStack"
 			}
 		}
