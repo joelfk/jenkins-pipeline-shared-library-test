@@ -7,7 +7,7 @@ pipeline {
 		stage("Build") {
 			steps {
 				echo "Before upsertStack"
-				upsertStack("Joel", "Kane")
+				upsertStack("Joel", ["P1Key":"P1Value", "P1Key":"P1Value"])
 				echo "After upsertStack"
 			}
 		}
