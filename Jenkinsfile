@@ -9,7 +9,10 @@ pipeline {
 				echo "Before upsertStack"
 				upsertStack(
 					stackName: "Joel",
-					parameters: ["P1Key":"P1Value", "P1Key":"P1Value"])
+					parameters: [
+						"P1Key" : "P1Value",
+						"P2Key" : "P2Value"
+					])
 				echo "After upsertStack"
 			}
 		}
